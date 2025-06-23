@@ -1,47 +1,45 @@
 body {
-    font-family: Roboto, Arial;
+    color: white;
 }
-
-.left-section,
-.right-section,
-.middle-section {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.header-container {
+.page-layout {
     position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 200px 1fr;
+}
+.left-grid {
+    position: relative;
+}
+
+.right-grid {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+}
+
+.navbar {
+    background-color: aqua;
+    position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 60px;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar-container {
-    position: fixed;
-    left: 0px;
-    top: 0px;
     bottom: 0px;
-    width: 230px;
-    background-color: rgb(117, 49, 49);
-    height: 1000px;
 }
 
+.header {
+    background-color: blue;
+}
+.main-content {
+    background-color: red;
+}
 .navbar-header {
     position: absolute;
-    background-color: rgb(182, 154, 154);
+    background-color: yellow;
     top: 0px;
-    left: 0px;
     right: 0px;
-    height: 60px;
-}
-
-.youtube-logo {
-    color: white;
-    height: 100px;
-    width: 100px;
+    left: 0px;
+height: 70px;
 }
