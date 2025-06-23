@@ -3,20 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube - clone</title>
-    <link rel="stylesheet" href="/public/styles/style.css" />
+    <title>Fixed Header in Left Panel</title>
+    <style>
+      body {
+        font-family: Roboto, Arial;
+        margin: 0;
+      }
+
+      .page-layout {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        height: 100vh;
+      }
+
+      .left-panel {
+        position: relative;
+        background-color: blue;
+      }
+
+      .left-panel-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: gray;
+        z-index: 1;
+      }
+
+      .left-panel-content {
+        position: absolute;
+        top: 50px; /* Push down below header */
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .left-panel-content-inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left-panel-content-inner div {
+        padding: 10px;
+        background: lightblue;
+        margin: 2px;
+      }
+
+      .right-panel {
+        background-color: red;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <div class="page-layout">
-      <div class="left-grid">
-        <div class="navbar">
-          <div class="navbar-header">navbar header</div>
+      <div class="left-panel">
+        <div class="left-panel-header">Header</div>
+        <div class="left-panel-content">
+          <div class="left-panel-content-inner">
+            <!-- Simulate 40 items -->
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+            <div>Item 7</div>
+            <div>Item 8</div>
+            <div>Item 9</div>
+            <div>Item 10</div>
+            <div>Item 11</div>
+            <div>Item 12</div>
+            <div>Item 13</div>
+            <div>Item 14</div>
+            <div>Item 15</div>
+            <div>Item 16</div>
+            <div>Item 17</div>
+            <div>Item 18</div>
+            <div>Item 19</div>
+            <div>Item 20</div>
+            <div>Item 21</div>
+            <div>Item 22</div>
+            <div>Item 23</div>
+            <div>Item 24</div>
+            <div>Item 25</div>
+            <div>Item 26</div>
+            <div>Item 27</div>
+            <div>Item 28</div>
+            <div>Item 29</div>
+            <div>Item 30</div>
+            <div>Item 31</div>
+            <div>Item 32</div>
+            <div>Item 33</div>
+            <div>Item 34</div>
+            <div>Item 35</div>
+            <div>Item 36</div>
+            <div>Item 37</div>
+            <div>Item 38</div>
+            <div>Item 39</div>
+            <div>Item 40</div>
+          </div>
         </div>
       </div>
-      <div class="right-grid">
-        <div class="header">head</div>
-        <div class="main-content">main</div>
-      </div>
+
+      <div class="right-panel">Right Panel</div>
     </div>
   </body>
 </html>
