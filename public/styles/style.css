@@ -1,0 +1,32 @@
+body {
+    font-family: Roboto, Arial;
+}
+
+
+.page-layout {
+    display: grid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    grid-template-columns: 240px 1fr;
+    height: 1002vh;
+}
+
+.left-panel {
+    background-color: blue;
+
+}
+
+.left-panel-header {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: gray;
+}
+.right-panel {
+    background-color: red;
+    
+}
